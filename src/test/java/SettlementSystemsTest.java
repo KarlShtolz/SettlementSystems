@@ -63,7 +63,7 @@ public class SettlementSystemsTest {
     }
     @Test
     public void findEqualsStringSpecialSymbols() {
-        String [] test = new String[]{"a","123","a","wasd","z-x-a-0/*!@#$%^&*()","wa","231","a","aa","/*!@#$%^&*()0-a-z-x","qwe","ewq","qwwe","q","a","ewqw","a","213","qwe","qwwe","q"};//qwe->ewq
+        String [] test = new String[]{"a","123","a","wasd","z-x-a-0/*!@#$%^&*()","wa","231","a","aa","/*!@#$%^&*()0-a-z-x","qwe","ewq","qwwe","q","a","ewqw","a","213","qwe","qwwe","q"};
         String actualAnswerAsString = settlementSystems.findEqualsString(test).toString();
         String expectedAnswerAsString = "[a = 0, 16, 14, 7, 2, 123 = 1, 17, 6, z-x-a-0/*!@#$%^&*() = 4, 9, qwe = 10, 18, 11, qwwe = 12, 19, 15, q = 13, 20]";
         Assert.assertEquals(expectedAnswerAsString, actualAnswerAsString);
