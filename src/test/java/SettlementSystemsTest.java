@@ -75,4 +75,11 @@ public class SettlementSystemsTest {
         String expectedAnswerAsString = "[\"л\" = 0, 14, \"аа\" = 1, 8, \"ф\" = 2, 7, \"аопр\" = 3, 15, \"\" = 5, 13, 11, \"нгок\" = 6, 19, \"й\" = 9, 20, \"одл\" = 10, 12, \"апр\" = 17, 18]";
         Assert.assertEquals(expectedAnswerAsString, actualAnswerAsString);
     }
+    @Test
+    public void findEqualsStringNullString() {
+        String [] test = new String[]{"a","123","a","wasd",null,"wa","231","a","aa",null,"qwe","ewq","qwwe","q","a","ewqw","a","213","qwe","qwwe","q"};
+        String actualAnswerAsString = settlementSystems.findEqualsString(test).toString();
+        String expectedAnswerAsString = "[\"a\" = 0, 16, 14, 7, 2, \"123\" = 1, 17, 6, \"qwe\" = 10, 18, 11, \"qwwe\" = 12, 19, 15, \"q\" = 13, 20]";
+        Assert.assertEquals(expectedAnswerAsString, actualAnswerAsString);
+    }
 }

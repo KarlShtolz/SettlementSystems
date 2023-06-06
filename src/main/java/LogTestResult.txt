@@ -60,6 +60,12 @@
 "qwwe" = 12, 19, 15
 "q" = 13, 20
 >>END_PARSING<<
+>>START_PARSING ARRAY = [a, 123, a, wasd, null, wa, 231, a, aa, null, qwe, ewq, qwwe, q, a, ewqw, a, 213, qwe, qwwe, q]<<
+"a" = 0, 16, 14, 7, 2
+"123" = 1, 17, 6
+"qwe" = 10, 18, 11
+"qwwe" = 12, 19, 15
+"q" = 13, 20
+>>END_PARSING<<
 
 Process finished with exit code 0
-
