@@ -27,7 +27,7 @@ public class SettlementSystems {
         String [][] answer = new String[arrString.length][COLUMN_COUNT];
         System.out.println(START_PARSING_ARR + Arrays.toString(arrString) + START_PARSING_ARR_TAG);
         for (int i = 0; i < arrString.length; i++) {
-            answer[i][COLUMN_STRING] = arrString[i];
+            answer[i][COLUMN_STRING] = "\"" + arrString[i] + "\"";
             answer[i][COLUMN_EQUAL_INDEX] = EQUAL_CHAR + i;
             answer[i][COLUMN_FLAG_EQUAL] = FLAG_NOW_IN_PROCESS;
             for (int j = arrString.length - 1; j > i; j--) {
